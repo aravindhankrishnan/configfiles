@@ -1,0 +1,8 @@
+pathogen (plugin manager)
+bufexplorer
+LustyExplorer 
+nerdtree
+vim-fugitive (git)
+vim-visual-increment
+sessionman
+taglist
