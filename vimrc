@@ -112,3 +112,10 @@ map <silent> ,z  :LustyBufferExplorer <cr>
 
 autocmd VimEnter * call ListSessions()
 
+" enabling mouse for vim inside tmux
+if has("mouse_sgr")
+  set ttymouse="sgr"
+else
+  set ttymouse="xterm2"
+end
+
