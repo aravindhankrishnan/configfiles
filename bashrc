@@ -149,6 +149,7 @@ alias rm='trash-put'
 alias del='trash-put'
 alias x='exit'
 alias f='find . -iname '
+alias h='hostname'
 alias codefind='find ./* -iname "*.cpp" -or -iname "*.c" -or -iname "*.h" -or -iname "*.hpp" -or -iname "*.m" -or -iname "*.py"'
 
 alias gvi='gvim --remote-silent '
