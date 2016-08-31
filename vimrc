@@ -13,6 +13,9 @@ set shiftwidth=2
 set expandtab
 set scrolloff=8
 
+" enabling mouse for vim inside tmux
+set ttymouse=xterm2
+
 set guifont=Menlo\ Regular:h14
 "On Linux set the guifont=Monospace\ 10
 "To get the current font :set gfn
@@ -112,7 +115,15 @@ map <silent> ,z  :LustyBufferExplorer <cr>
 
 autocmd VimEnter * call ListSessions()
 
-" enabling mouse for vim inside tmux
+"Remove the thick bar for the vertical split
+autocmd colorscheme * highlight VertSplit cterm=NONE guibg=NONE ctermbg=NONE
+
+"Remove the thick bar for the vertical split
+autocmd colorscheme * highlight VertSplit cterm=NONE guibg=NONE ctermbg=NONE
+
+
+"enabling mouse for vim inside tmux
+
 if has("mouse_sgr")
   set ttymouse="sgr"
 else
