@@ -87,6 +87,10 @@ function! ListSessions()
 	end
 endfunction
 
+
+"Loading the vimrc file
+nmap <silent> ,0 :so ~/.vimrc <cr>
+
 "GIT commands
 
 "Going back to editing mode
