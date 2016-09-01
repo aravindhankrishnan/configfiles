@@ -129,8 +129,8 @@ autocmd colorscheme * highlight VertSplit cterm=NONE guibg=NONE ctermbg=NONE
 "enabling mouse for vim inside tmux
 
 if has("mouse_sgr")
-  set ttymouse="sgr"
+  set ttymouse=sgr
 else
-  set ttymouse="xterm2"
+  set ttymouse=xterm2
 end
 
