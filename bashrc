@@ -99,6 +99,11 @@ function set_terminal_name () {
   printf "\033];%s\07\n" $1
 }
 
+function customgrep() {
+  command="grep --color=auto $1 ./* -Iirn"
+  eval $command
+}
+
 #function customgrep () {
 #  command="grep -Iirn --color=auto "
 #  echo "Search pattern ${1}"
@@ -115,6 +120,21 @@ function set_terminal_name () {
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias gvi='gvim --remote-silent '
+alias f='customfind'
+alias g='customgrep'
+alias g1='grep --color=auto'
+alias x='exit'
+alias codefind='find ./* -iname "*.cpp" -or -iname "*.c" -or -iname "*.h" -or -iname "*.hpp" -or -iname "*.m"'
+alias stn='set_terminal_name'
+alias gdt='git difftool --no-prompt --tool=vimdiff'
+alias gst='git status'
+# pbcopy
+alias pbc='xclip -selection clipboard'
+# pbpaste
+alias pbp='xclip -selection clipboard -o'
+# pbselect
+alias pbs='xclip -selection primary -o'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
