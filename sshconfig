@@ -1,0 +1,5 @@
+
+# For any remote server, send an alive signal every 4 mins (240 seconds)
+# to avoid disonnects
+Host *
+  ServerAliveInterval 240
