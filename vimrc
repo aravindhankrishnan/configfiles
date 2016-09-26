@@ -12,6 +12,7 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set scrolloff=8
+set clipboard=unnamed
 
 " enabling mouse for vim inside tmux
 set ttymouse=xterm2
