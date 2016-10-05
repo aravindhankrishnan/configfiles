@@ -184,3 +184,5 @@ alias pbc='xclip -selection clipboard'
 alias pbp='xclip -selection clipboard -o'
 # pbselect
 alias pbs='xclip -selection primary -o'
+
+alias bc='bc -l'
