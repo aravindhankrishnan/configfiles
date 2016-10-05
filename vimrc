@@ -126,6 +126,8 @@ autocmd colorscheme * highlight VertSplit cterm=NONE guibg=NONE ctermbg=NONE
 "Remove the thick bar for the vertical split
 autocmd colorscheme * highlight VertSplit cterm=NONE guibg=NONE ctermbg=NONE
 
+" mapping Ctrl+Space to Ctrl+n for autocomplete
+inoremap <Nul> <C-n>
 
 "enabling mouse for vim inside tmux
 
