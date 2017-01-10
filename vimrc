@@ -32,9 +32,12 @@ filetype plugin indent on
 
 let mapleader=","
 
-nmap <Leader>v :e ~/.vimrc <cr>
+nmap <Leader>1 :e ~/.vimrc <cr>
 nmap <Leader>w :w <cr>
 nmap <Leader>q :q <cr>
+
+"vertical split
+nmap <Leader>v vnew % <cr>
 
 " copy to OS clipboard
 map <Leader>y "+y
