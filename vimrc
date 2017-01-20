@@ -116,7 +116,7 @@ nmap <silent> ,gb :Gblame <cr>
 nmap <silent> ,gw :Gwrite <cr>
 
 " Lusty Buffer grep
-nmap <silent> ,lg :LustyBufferGrep <cr>
+nmap <silent> ,/ :LustyBufferGrep <cr>
 
 " Lusty Buffer search
 map <silent> ,z  :LustyBufferExplorer <cr>
