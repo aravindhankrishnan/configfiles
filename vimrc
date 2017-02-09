@@ -95,6 +95,9 @@ endfunction
 "Loading the vimrc file
 nmap <silent> ,0 :so ~/.vimrc <cr>
 
+"Loading all buffers again
+nmap <silent> ,l :bufdo e <cr>
+
 "GIT commands
 
 "Going back to editing mode
