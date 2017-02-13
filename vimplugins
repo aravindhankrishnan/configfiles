@@ -6,3 +6,7 @@ vim-fugitive (git)
 vim-visual-increment
 sessionman
 taglist
+tlib_vim
+vim-addon-mw-utils.git
+snipmate
+vim-snippets.git
