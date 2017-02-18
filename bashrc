@@ -160,6 +160,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
+function set_terminal_name() {
+    printf "\033];%s\07\n" $1
+}
+
 export PS1="$ "
 
 ulimit -c unlimited
@@ -171,6 +175,7 @@ alias x='exit'
 alias f='find . -iname '
 alias h='hostname'
 alias codefind='find ./* -iname "*.cpp" -or -iname "*.c" -or -iname "*.h" -or -iname "*.hpp" -or -iname "*.m" -or -iname "*.py"'
+alias stn='set_terminal_name'
 
 alias gvi='gvim --remote-silent '
 
