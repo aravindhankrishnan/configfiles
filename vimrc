@@ -17,7 +17,7 @@ set clipboard=unnamed
 " enabling mouse for vim inside tmux
 set ttymouse=xterm2
 
-set guifont=Menlo\ Regular:h14
+set guifont=Monospace\ 14
 "On Linux set the guifont=Monospace\ 10
 "To get the current font :set gfn
 
@@ -124,6 +124,8 @@ nmap <silent> ,/ :LustyBufferGrep <cr>
 " Lusty Buffer search
 map <silent> ,z  :LustyBufferExplorer <cr>
 
+vnoremap <silent> <c-s> :Strikethrough <cr>
+
 autocmd VimEnter * call ListSessions()
 
 "Remove the thick bar for the vertical split
@@ -143,3 +145,13 @@ else
   set ttymouse=xterm2
 end
 
+" modify selected text using combining diacritics
+command! -range -nargs=0 Overline        call s:CombineSelection(<line1>, <line2>, '0305')
+command! -range -nargs=0 Underline       call s:CombineSelection(<line1>, <line2>, '0332')
+command! -range -nargs=0 DoubleUnderline call s:CombineSelection(<line1>, <line2>, '0333')
+command! -range -nargs=0 Strikethrough   call s:CombineSelection(<line1>, <line2>, '0336')
+
+function! s:CombineSelection(line1, line2, cp)
+  execute 'let char = "\u'.a:cp.'"'
+  execute a:line1.','.a:line2.'s/\%V[^[:cntrl:]]/&'.char.'/ge'
+endfunction
