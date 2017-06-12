@@ -136,8 +136,8 @@ autocmd colorscheme * highlight VertSplit cterm=NONE guibg=NONE ctermbg=NONE
 autocmd colorscheme * highlight VertSplit cterm=NONE guibg=NONE ctermbg=NONE
 
 "Tab switches
-map <C-Left> <ESC>:tabprev <CR>
-map <C-Right> <ESC>:tabnext <CR>
+map <C-h> <ESC>:tabprev <CR>
+map <C-l> <ESC>:tabnext <CR>
 
 " mapping Ctrl+Space to Ctrl+n for autocomplete
 inoremap <Nul> <C-n>
