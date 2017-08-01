@@ -8,17 +8,21 @@ set hidden
 set ruler
 set textwidth=80
 set equalalways
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set expandtab
 set scrolloff=8
-set clipboard=unnamed
+"set clipboard=unnamed
+set ttymouse=xterm2
 set noswapfile
 
-" enabling mouse for vim inside tmux
-set ttymouse=xterm2
+" setting ctags file
+set tags=~/lh-projects/snitch/tags;
 
-set guifont=Monospace\ 14
+" enabling mouse for vim inside tmux
+"set ttymouse=xterm2
+
+set guifont=Monospace\ 10
 "On Linux set the guifont=Monospace\ 10
 "To get the current font :set gfn
 
@@ -38,7 +42,7 @@ nmap <Leader>w :w <cr>
 nmap <Leader>q :q <cr>
 
 "vertical split
-nmap <Leader>v vnew % <cr>
+nmap <Leader>v :vnew % <cr>
 
 " copy to OS clipboard
 map <Leader>y "+y
@@ -93,9 +97,6 @@ function! ListSessions()
 endfunction
 
 
-"Loading the vimrc file
-nmap <silent> ,0 :so ~/.vimrc <cr>
-
 "Loading all buffers again
 nmap <silent> ,l :bufdo e <cr>
 
@@ -135,20 +136,40 @@ autocmd colorscheme * highlight VertSplit cterm=NONE guibg=NONE ctermbg=NONE
 "Remove the thick bar for the vertical split
 autocmd colorscheme * highlight VertSplit cterm=NONE guibg=NONE ctermbg=NONE
 
+
 "Tab switches
 map <C-h> <ESC>:tabprev <CR>
 map <C-l> <ESC>:tabnext <CR>
 
+"" cscope
+
+cs add ~/lh-projects/snitch/cscope.out
+
+" Find functions that call this function
+nmap <Leader>cc :cs find c <C-R>=expand("<cword>")<CR><CR>
+
+" Find files including this file
+nmap <Leader>ci :cs find i <C-R>=expand("<cword>")<CR><CR>
+
+" Find this definition
+nmap <Leader>cd :cs find g <C-R>=expand("<cword>")<CR><CR>
+
+" Find this file
+nmap <Leader>cf :cs find f 
+
+" Find this symbol
+nmap <Leader>cs :cs find s <C-R>=expand("<cword>")<CR><CR>
+
 " mapping Ctrl+Space to Ctrl+n for autocomplete
-inoremap <Nul> <C-n>
+"inoremap <Nul> <C-n>
 
 "enabling mouse for vim inside tmux
 
-if has("mouse_sgr")
-  set ttymouse=sgr
-else
-  set ttymouse=xterm2
-end
+"if has("mouse_sgr")
+"  set ttymouse=sgr
+"else
+"set ttymouse=xterm2
+"end
 
 " modify selected text using combining diacritics
 command! -range -nargs=0 Overline        call s:CombineSelection(<line1>, <line2>, '0305')
