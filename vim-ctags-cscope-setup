@@ -1,0 +1,35 @@
+
+ctags with vim
+==============
+
+Install exuberant ctags
+
+Go to snitch directory
+ ctags -R . (creates a tags file)
+
+In vim, set tags=~/lh-projects/snitch/tags; (semicolon at the end)
+
+Ctrl-] to go to the definition
+Ctrl-T to get back
+
+cscope
+======
+
+-> Use the full path here
+find /home/aravindhan/lh-projects/snitch/ -iname "*.cpp" -or -iname "*.cc" -or -iname  "*.h" -or -iname "*.java" > cscope.files
+
+cscope -b -q
+
+-b : builds the database
+-q : build an inverted index
+
+creates 3 files:
+ - cscope.po.out
+ - cscope.in.out
+ - cscope.out
+
+$ export CSCOPE_DB=/home/aravindhan/lh-projects/snitch/cscope.out
+
+In vimrc:
+
+cs add ~/lh-projects/snitch/cscope.out
