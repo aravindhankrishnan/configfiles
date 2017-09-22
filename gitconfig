@@ -4,3 +4,5 @@
 [user]
 	name = aravindhan
 	email = aravindhan.krishnan@gmail.com
+[commit]
+    template = ~/.gitmessage
