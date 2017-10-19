@@ -16,6 +16,11 @@ set scrolloff=8
 set ttymouse=xterm2
 set noswapfile
 
+" don't check inlcude path for tab completion. This searches all files in
+" /usr/include/*
+" Type set path to identify the paths vim tab completion searches
+set complete-=i
+
 " setting ctags file
 set tags=~/lh-projects/snitch/tags;
 
