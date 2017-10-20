@@ -24,6 +24,12 @@ set complete-=i
 " setting ctags file
 set tags=~/lh-projects/snitch/tags;
 
+"setting path to search for files
+set path+=/home/aravindhan/lh-projects/snitch/**
+
+" runtime path for CtrlP
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
 " enabling mouse for vim inside tmux
 "set ttymouse=xterm2
 
@@ -94,6 +100,18 @@ nmap SC <ESC> :SessionShowLast <cr>
 
 " Function and variable list in a separate window
 nmap <Leader>x :TlistToggle <cr>
+
+" CtrlP root foler to find files
+" r - ancestor of the .git folder
+" c - directory of the current file
+" a - like 'c' but applies only when the current working directory outside of
+"     CtlrP isn't a direct ancestor of the directory of the current file
+let g:ctrlp_working_path_mode=0
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_max_files=0 
+
+"Invoking CtrlP
+nmap <silent> ,a :CtrlP  <cr>
 
 function! ListSessions()
 	if argc()==0
