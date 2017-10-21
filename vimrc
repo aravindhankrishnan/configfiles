@@ -16,6 +16,9 @@ set scrolloff=8
 set ttymouse=xterm2
 set noswapfile
 
+"for coding
+set textwidth=80
+
 " don't check inlcude path for tab completion. This searches all files in
 " /usr/include/*
 " Type set path to identify the paths vim tab completion searches
