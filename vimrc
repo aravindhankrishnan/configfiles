@@ -101,7 +101,7 @@ nmap SL <ESC> :SessionList <cr>
 nmap SC <ESC> :SessionShowLast <cr>
 
 "Highlight the current word under the cursor
-nmap <Leader>m :match Visual '' <cr>
+nmap <silent> <Leader>m :match Visual '' <cr>
 
 " Function and variable list in a separate window
 nmap <Leader>x :TlistToggle <cr>
