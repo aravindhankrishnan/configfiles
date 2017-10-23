@@ -100,6 +100,8 @@ nmap SL <ESC> :SessionList <cr>
 "Show last and current session
 nmap SC <ESC> :SessionShowLast <cr>
 
+"Highlight the current word under the cursor
+nmap <Leader>m :match Visual '' <cr>
 
 " Function and variable list in a separate window
 nmap <Leader>x :TlistToggle <cr>
@@ -169,7 +171,7 @@ map <C-l> <ESC>:tabnext <CR>
 
 "" cscope
 
-cs add ~/lh-projects/snitch/cscope.out
+"cs add ~/lh-projects/snitch/cscope.out
 
 " Find functions that call this function
 nmap <Leader>cc :cs find c <C-R>=expand("<cword>")<CR><CR>
