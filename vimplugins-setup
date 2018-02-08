@@ -1,0 +1,27 @@
+1. Create folders
+~~~~~~~~~~~~~~~~~~
+mkdir ~/.vim/autoload
+mkdir ~/.vim/bundle
+
+2. Get 'pathogen' plugin to manage runtime
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- cd ~/.vim/autoload
+- git clone http://github.com/tpope/vim-pathogen.git 
+
+3. Get other plugings in the 'bundle' folder
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- cd ~/.vim/bundle
+
+Do a 'git clone' of the following plugins
+
+bufexplorer
+LustyExplorer 
+nerdtree
+vim-fugitive (git)
+vim-visual-increment
+sessionman
+taglist
+tlib_vim
+vim-addon-mw-utils.git
+snipmate
+vim-snippets.git
