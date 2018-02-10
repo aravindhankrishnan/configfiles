@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Install tmux
+echo -e "\e[1;31mInstalling tmux\e[0m"
+sudo apt install tmux
+
 # Install trash-ci
 echo -e "\e[1;31mInstalling trash-cli\e[0m"
 sudo apt install trash-cli
@@ -21,5 +25,16 @@ fi
 # Setup the bashrc
 echo -e "\e[1;31mCopying the new bashrc\e[0m"
 cp bashrc ~/.bashrc
+
+
+# Take a backup of the existing tmux config
+echo -e "\e[1;31mBacking up the existing tmux config\e[0m"
+if [ -e ~/.tmux.conf ]; then
+    mv ~/.tmux.conf ~/tmux.conf-`date +%F-T-%T`
+fi
+
+# Copy the new tmux config 
+echo -e "\e[1;31mCopying the new tmux config\e[0m"
+cp tmux.conf ~/.tmux.conf
 
 echo -e "\e[1;31mBASH SETUP DONE. \e[0m"
