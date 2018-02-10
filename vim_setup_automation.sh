@@ -15,8 +15,20 @@ echo -e "\e[1;31m~~~~~ exuberant-ctags INSTALL COMPLETE ~~~~~\e[0m"
 
 
 echo -e "\e[1;31mCopying vimrc\e[0m"
-# copy the vimrc file
+# backup the exsitiing vimrc and copy the new vimrc file
+
+if [ -e ~/.vimrc ] ; then
+    echo -e "\e[1;31mBacking up the existing .vimrc ..\e[0m"
+    mv ~/.vimrc ~/vimrc-`date +%F-T-%T`
+fi
+
 cp vimrc ~/.vimrc
+
+# backup the exsitiing .vim folder and setting up the new .vim file
+if [ -e ~/.vim ] ; then
+    echo -e "\e[1;31mBacking up the existing .vim folder ..\e[0m"
+    mv ~/.vim ~/vim-`date +%F-T-%T`
+fi
 
 # move to the home folder
 cd
