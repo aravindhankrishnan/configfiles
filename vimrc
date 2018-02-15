@@ -51,6 +51,7 @@ filetype plugin indent on
 
 let mapleader=","
 
+nmap <Leader>0 :so ~/.vimrc <cr>
 nmap <Leader>1 :e ~/.vimrc <cr>
 nmap <Leader>w :w <cr>
 nmap <Leader>q :q <cr>
