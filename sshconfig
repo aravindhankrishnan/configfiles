@@ -3,3 +3,9 @@
 # to avoid disonnects
 Host *
   ServerAliveInterval 240
+
+# To login without having to type the password once the ssh keys are copied
+Host <hostname-short-name>
+  Hostname <hostname-complete-name>
+  User <username>
+  PasswordAuthentication no
