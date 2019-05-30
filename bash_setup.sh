@@ -16,6 +16,10 @@ sudo apt install xclip
 echo -e "\e[1;31mInstalling vim-gnome\e[0m"
 sudo apt install vim-gnome
 
+# Install bc
+echo -e "\e[1;31mInstalling bc\e[0m"
+sudo apt install bc
+
 # Take a backup of the existing bashrc
 echo -e "\e[1;31mBacking up the existing bashrc\e[0m"
 if [ -e ~/.bashrc ]; then
