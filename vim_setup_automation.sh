@@ -5,17 +5,17 @@ echo -e "\e[1;31mAdding PPA to install Vim 8.0 ...\e[0m"
 sudo apt-add-repository ppa:jonathonf/vim
 sudo apt update
 echo -e "\e[1;31m~~~~~ INSTALLING VIM 8.0 ~~~~~~\e[0m"
-sudo apt install vim
+sudo apt install -y vim
 echo -e "\e[1;31m~~~~~ VIM 8.0 INSTALL COMPLETE ~~~~~\e[0m"
 
 # Install vim ruby (required for LustyBufferExplorer plugin)
 echo -e "\e[1;31mInstalling vim ruby...\e[0m"
-sudo apt install vim-ruby
+sudo apt install -y vim-ruby
 echo -e "\e[1;31m~~~~~ vim-ruby INSTALL COMPLETE ~~~~~\e[0m"
 
 # Install exuberant ctags
 echo -e "\e[1;31mInstalling exuberant ctags ...\e[0m"
-sudo apt install exuberant-ctags
+sudo apt install -y exuberant-ctags
 echo -e "\e[1;31m~~~~~ exuberant-ctags INSTALL COMPLETE ~~~~~\e[0m"
 
 

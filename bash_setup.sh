@@ -2,23 +2,23 @@
 
 # Install tmux
 echo -e "\e[1;31mInstalling tmux\e[0m"
-sudo apt install tmux
+sudo apt install -y tmux
 
 # Install trash-ci
 echo -e "\e[1;31mInstalling trash-cli\e[0m"
-sudo apt install trash-cli
+sudo apt install -y trash-cli
 
 # Install clip
 echo -e "\e[1;31mInstalling xlcip\e[0m"
-sudo apt install xclip
+sudo apt install -y xclip
 
 # Install GVim
 echo -e "\e[1;31mInstalling vim-gnome\e[0m"
-sudo apt install vim-gnome
+sudo apt install -y vim-gnome
 
 # Install bc
 echo -e "\e[1;31mInstalling bc\e[0m"
-sudo apt install bc
+sudo apt install -y bc
 
 # Take a backup of the existing bashrc
 echo -e "\e[1;31mBacking up the existing bashrc\e[0m"
