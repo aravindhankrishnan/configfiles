@@ -194,3 +194,4 @@ alias pbp='xclip -selection clipboard -o'
 alias pbs='xclip -selection primary -o'
 
 alias bc='bc -l'
+alias gpo='git push origin'
