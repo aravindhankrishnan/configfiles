@@ -181,10 +181,12 @@ alias codefind='find ./* -iname "*.cpp" -or -iname "*.c" -or -iname "*.h" -or -i
 alias stn='set_terminal_name'
 
 alias gvi='gvim --remote-silent '
-
 alias stn='set_terminal_name'
+
 alias gdt='git difftool --no-prompt --tool=vimdiff'
 alias gst='git status'
+alias gpo='git push origin'
+alias gb='git branch'
 
 # pbcopy
 alias pbc='xclip -selection clipboard'
@@ -194,4 +196,4 @@ alias pbp='xclip -selection clipboard -o'
 alias pbs='xclip -selection primary -o'
 
 alias bc='bc -l'
-alias gpo='git push origin'
+
