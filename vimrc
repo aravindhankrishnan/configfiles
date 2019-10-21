@@ -6,10 +6,9 @@ set autochdir
 set autoread
 set hidden
 set ruler
-set textwidth=80
 set equalalways
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set scrolloff=8
 "set clipboard=unnamed
@@ -17,7 +16,7 @@ set ttymouse=xterm2
 set noswapfile
 
 "for coding
-set textwidth=80
+set textwidth=120
 
 " don't check inlcude path for tab completion. This searches all files in
 " /usr/include/*
