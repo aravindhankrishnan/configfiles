@@ -197,3 +197,5 @@ alias pbs='xclip -selection primary -o'
 
 alias bc='bc -l'
 
+# enable vim shortcuts in bash
+set -o vi
