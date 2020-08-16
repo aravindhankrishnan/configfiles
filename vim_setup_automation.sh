@@ -89,7 +89,10 @@ git clone https://github.com/garbas/vim-snipmate.git
 # vim-snippets
 git clone https://github.com/honza/vim-snippets.git
 
-# Ctlp for file search
+# CtrlP for file search
 git clone https://github.com/kien/ctrlp.vim.git
+
+# vim-bookmarks
+git clone https://github.com/MattesGroeger/vim-bookmarks.git
 
 echo -e "\e[1;31mINSTALL COMPLETE ...\e[0m"
