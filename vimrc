@@ -42,11 +42,16 @@ set guifont=Monospace\ 10
 set cindent
 set autoindent
 
-colorscheme desert
 
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
+
+"colorscheme desert
+
+"To get the color scheme : git clone https://github.com/rafi/awesome-vim-colorschemes.git               
+"" :colorscheme <Ctrl D> lists the colorschemes                                                           
+colorscheme PaperColor                                                                                  
 
 let mapleader=","
 
