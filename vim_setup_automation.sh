@@ -89,7 +89,6 @@ git clone https://github.com/garbas/vim-snipmate.git
 # vim-snippets
 git clone https://github.com/honza/vim-snippets.git
 
-<<<<<<< HEAD
 # CtrlP for file search
 git clone https://github.com/kien/ctrlp.vim.git
 
