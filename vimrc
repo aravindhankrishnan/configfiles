@@ -51,7 +51,7 @@ filetype plugin indent on
 
 "To get the color scheme : git clone https://github.com/rafi/awesome-vim-colorschemes.git               
 "" :colorscheme <Ctrl D> lists the colorschemes                                                           
-colorscheme PaperColor                                                                                  
+colorscheme seoul256                                                                                  
 
 let mapleader=","
 
