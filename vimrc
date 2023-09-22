@@ -148,7 +148,7 @@ nmap <silent> ,gd :Gdiff <cr>
 nmap <silent> ,gs :Gstatus <cr>
 
 " git blame -- author (commit) info for each line.
-nmap <silent> ,gb :Gblame <cr>
+nmap <silent> ,gb :G blame <cr>
 
 " git state filename -- stage the current file to the index
 nmap <silent> ,gw :Gwrite <cr>
