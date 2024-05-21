@@ -196,6 +196,7 @@ alias pbp='xclip -selection clipboard -o'
 alias pbs='xclip -selection primary -o'
 
 alias bc='bc -l'
+alias cat='batcat'
 
 # enable vim shortcuts in bash
 set -o vi
