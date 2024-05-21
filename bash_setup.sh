@@ -42,3 +42,9 @@ echo -e "\e[1;31mCopying the new tmux config\e[0m"
 cp tmux.conf ~/.tmux.conf
 
 echo -e "\e[1;31mBASH SETUP DONE. \e[0m"
+
+
+# Settup dust
+echo -e "\e[1;31mInstalling dust\e[0m"
+sudo bash -c "$(curl -fsSL https://pacstall.dev/q/install || wget -q https://pacstall.dev/q/install -O -)"
+pacstall -I dust-bin
