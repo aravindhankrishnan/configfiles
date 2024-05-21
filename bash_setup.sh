@@ -48,3 +48,9 @@ echo -e "\e[1;31mBASH SETUP DONE. \e[0m"
 echo -e "\e[1;31mInstalling dust\e[0m"
 sudo bash -c "$(curl -fsSL https://pacstall.dev/q/install || wget -q https://pacstall.dev/q/install -O -)"
 pacstall -I dust-bin
+
+# Settup btop
+echo -e "\e[1;31mInstalling btop\e[0m"
+sudo snap install btop
+
+
