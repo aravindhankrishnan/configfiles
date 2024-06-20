@@ -201,3 +201,8 @@ alias fzfp='fzf --preview "cat {}"'
 
 # enable vim shortcuts in bash
 set -o vi
+
+# fzf key bindings
+source /usr/share/doc/fzf/examples/key-bindings.bash
+# Ctrl-r for command history search
+# vi <Ctrl-t> for opening files
