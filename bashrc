@@ -207,3 +207,6 @@ source /usr/share/doc/fzf/examples/key-bindings.bash
 # Ctrl-r for command history search
 # vi <Ctrl-t> for opening files
 # cd <alt-c> OR <opt-c> for quick cd
+
+# Initialize zoxide
+eval "$(zoxide init bash)"
