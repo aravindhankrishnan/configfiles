@@ -53,6 +53,9 @@ pacstall -I dust-bin
 echo -e "\e[1;31mInstalling btop\e[0m"
 sudo snap install btop
 
+# Setup fzf
+sudo apt install fzf
+
 # Settup zoxide
 curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
 
