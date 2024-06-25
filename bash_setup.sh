@@ -56,6 +56,9 @@ sudo snap install btop
 # Setup fzf
 sudo apt install fzf
 
+#Install batcat
+sudo apt install bat
+
 # Settup zoxide
 curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
 
