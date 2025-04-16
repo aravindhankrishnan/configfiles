@@ -14,6 +14,7 @@ set scrolloff=8
 "set clipboard=unnamed
 set ttymouse=xterm2
 set noswapfile
+set paste
 
 "for coding
 set textwidth=120
@@ -55,6 +56,9 @@ colorscheme seoul256
 
 let mapleader=","
 
+" copy to clipboard in visual mode
+vmap <Leader>y "+y
+
 nmap <Leader>0 :so ~/.vimrc <cr>
 nmap <Leader>1 :e ~/.vimrc <cr>
 nmap <Leader>w :w <cr>
@@ -62,12 +66,6 @@ nmap <Leader>q :q <cr>
 
 "vertical split
 nmap <Leader>v :vnew % <cr>
-
-" copy to OS clipboard
-map <Leader>y "+y
-
-" copy from OS clipboard
-map <Leader>p "*p
 
 " opening a new file
 nmap <Leader>e :e 
