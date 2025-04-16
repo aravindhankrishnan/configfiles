@@ -1,11 +1,8 @@
 #!/bin/bash
 
-# Install vim 8.0
-echo -e "\e[1;31mAdding PPA to install Vim 8.0 ...\e[0m"
-sudo apt-add-repository ppa:jonathonf/vim
-sudo apt update
-echo -e "\e[1;31m~~~~~ INSTALLING VIM 8.0 ~~~~~~\e[0m"
-sudo apt install -y vim
+# Install vim gtk3 -> This version has clipboard support
+echo -e "\e[1;31m~~~~~ INSTALLING VIM GTK ~~~~~~\e[0m"
+sudo apt install -y vim-gtk3
 echo -e "\e[1;31m~~~~~ VIM 8.0 INSTALL COMPLETE ~~~~~\e[0m"
 
 # Install vim ruby (required for LustyBufferExplorer plugin)
