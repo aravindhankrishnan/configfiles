@@ -159,6 +159,9 @@ map <silent> ,z  :LustyBufferExplorer <cr>
 
 vnoremap <silent> <c-s> :Strikethrough <cr>
 
+" Toggling paste / no paste mode
+nnoremap ,t :set paste!<CR>:set paste?<CR>
+
 autocmd VimEnter * call ListSessions()
 
 "Remove the thick bar for the vertical split
