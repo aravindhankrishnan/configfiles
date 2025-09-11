@@ -48,6 +48,8 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+set term=kitty
+
 "colorscheme desert
 
 "To get the color scheme : git clone https://github.com/rafi/awesome-vim-colorschemes.git               
