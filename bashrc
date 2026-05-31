@@ -208,8 +208,8 @@ source /usr/share/doc/fzf/examples/key-bindings.bash
 # vi <Ctrl-t> for opening files
 # cd <alt-c> OR <opt-c> for quick cd
 
-
 alias kssh='kitty @ launch kitty +kitten ssh user@machine'
+alias kssh-h='kitty @ launch kitty --location=hsplit +kitten ssh user@machine'
 alias ksshtab='kitty @ launch --type=tab kitty +kitten ssh user@machine'
 alias ksshwindow='kitty @ launch --type=os-window kitty +kitten ssh user@machine'
 
