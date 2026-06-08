@@ -134,6 +134,13 @@ alias gdt='git difftool --no-prompt --tool=vimdiff'
 alias gst='git status'
 # pbcopy
 alias pbc='xclip -selection clipboard'
+
+# For remote ssh using kitty, use this version of pbc (a shell script)
+#!/bin/bash
+# ~/.local/bin/pbc
+#echo -en "\033]52;c;$(base64 | tr -d '\n')\a"
+# The paste is just Ctrl + Shift + v
+
 # pbpaste
 alias pbp='xclip -selection clipboard -o'
 # pbselect
